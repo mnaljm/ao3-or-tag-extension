@@ -37,7 +37,13 @@ const firefoxManifest = {
     browser_specific_settings: {
         gecko: {
             id: "ao3-or-tag@example.com",
-            strict_min_version: "57.0"
+            strict_min_version: "57.0",
+            data_collection_permissions: {
+                builtin: false
+            }
+        },
+        gecko_android: {
+            strict_min_version: "120.0"
         }
     }
 };
