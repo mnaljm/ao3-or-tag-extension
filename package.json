@@ -1,0 +1,20 @@
+{
+    "name": "ao3-or-tag-extension",
+    "version": "1.0.0",
+    "description": "Browser extension to enable OR logic for tag filtering on AO3",
+    "scripts": {
+        "build": "node scripts/build.js",
+        "build:chrome": "node scripts/build-chrome.js",
+        "build:firefox": "node scripts/build-firefox.js"
+    },
+    "keywords": [
+        "ao3",
+        "archive of our own",
+        "browser extension",
+        "chrome",
+        "firefox"
+    ],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {}
+}

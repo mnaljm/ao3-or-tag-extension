@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "AO3 OR-Tag Extension",
+  "version": "1.0",
+  "description": "Enable users to select multiple tags and have them combined with OR logic on AO3.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://archiveofourown.org/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://archiveofourown.org/*"],
+      "js": ["utils.js", "ui.js", "content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "options_page": "options.html",
+  "action": {
+    "default_title": "AO3 OR-Tag Settings",
+    "default_popup": "options.html"
+  }
+}

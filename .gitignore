@@ -1,0 +1,19 @@
+# Build artifacts
+build/
+*.zip
+
+# Development files
+node_modules/
+.DS_Store
+*.log
+
+# Test files (keep these out of releases)
+page.html
+test_utils.html
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

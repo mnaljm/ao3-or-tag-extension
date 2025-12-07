@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AO3 OR-Tag Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <h1>AO3 OR-Tag Extension Settings</h1>
+  <form id="options-form">
+    <fieldset>
+      <legend>OR Logic Categories</legend>
+      <label>
+        <input type="checkbox" id="cat-tropes" checked>
+        Additional Tags (Tropes)
+      </label>
+      <br>
+      <label>
+        <input type="checkbox" id="cat-characters">
+        Characters
+      </label>
+      <br>
+      <label>
+        <input type="checkbox" id="cat-relationships">
+        Relationships
+      </label>
+      <br>
+      <label>
+        <input type="checkbox" id="cat-fandoms">
+        Fandoms
+      </label>
+    </fieldset>
+    
+    <fieldset>
+      <legend>General</legend>
+      <label>
+        <input type="checkbox" id="default-enabled">
+        Enable OR Mode by default
+      </label>
+    </fieldset>
+
+    <button type="submit">Save</button>
+    <span id="status"></span>
+  </form>
+  <script src="options.js"></script>
+</body>
+</html>
